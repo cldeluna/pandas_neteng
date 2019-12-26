@@ -1,0 +1,32 @@
+Value Filldown NAME (\S+)
+Value Filldown MODE (\S+)
+Value Filldown TOPOLOGY (\w+)
+Value Filldown TOTALPWR (\d+)
+Value Filldown RSVDPWR (\d+)
+Value Filldown ALLOCPWR (\d+)
+Value Filldown UNUSEDPWR (\d+)
+Value Filldown NUMSW (\d)
+Value Filldown NUMPS (\d{1,2})
+Value Required SW (\S+)
+Value SWNAME (Power\S+)
+Value P1STATUS (\S+)
+Value P1NEI (\S+)
+Value P2STATUS (\S+)
+Value P2NEI (\S+)
+
+# Added Filldown to all the values in the first section so that we can get a complete record for each switch
+# That includes the Port status
+# Added 'Power' to \S+ in SWNAME Value as the template was picking up more data when run against a full set of show commands
+
+
+Start
+  ^Power Stack\s+Stack\s+Stack\s+Total\s+Rsvd\s+Alloc\s+Unused\s+Num\s+Num$$
+  ^Name\s+Mode\s+Topolgy.* -> Stack
+
+Stack
+  ^${NAME}\s+${MODE}\s+${TOPOLOGY}\s+${TOTALPWR}\s+${RSVDPWR}\s+${ALLOCPWR}\s+${UNUSEDPWR}\s+${NUMSW}\s+${NUMPS}
+  ^SW\s+Name\s+Status\s+Neighbor\s+SW:MAC -> Switch
+
+Switch
+  ^${SW}\s+${SWNAME}\s+${P1STATUS}\s+${P1NEI}\s+${P2STATUS}\s+${P2NEI} -> Record
+

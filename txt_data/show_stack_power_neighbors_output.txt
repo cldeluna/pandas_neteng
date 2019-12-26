@@ -1,0 +1,11 @@
+na-us-1803-mdf-as01#show stack-power neighbors
+Power Stack           Stack   Stack    Total   Rsvd    Alloc   Unused  Num  Num
+Name                  Mode    Topolgy  Pwr(W)  Pwr(W)  Pwr(W)  Pwr(W)  SW   PS
+--------------------  ------  -------  ------  ------  ------  ------  ---  ---
+Powerstack-1          SP-PS   Ring     2860    58      878     1924    2    4   
+
+    Power Stack           Port 1  Port 1             Port 2  Port 2
+SW  Name                  Status  Neighbor SW:MAC    Status  Neighbor SW:MAC
+--  --------------------  ------  ----------------   ------  ----------------
+1   Powerstack-1          Conn    2:0045.1ddd.4f80   Conn    2:0045.1ddd.4f80
+2   Powerstack-1          Conn    1:00b6.7096.b980   Conn    1:00b6.7096.b980

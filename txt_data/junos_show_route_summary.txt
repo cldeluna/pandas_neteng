@@ -1,0 +1,26 @@
+rviews@rviews-vm> show route summary
+Autonomous system number: 2495
+Router ID: 164.113.193.221
+
+inet.0: 762484 destinations, 1079411 routes (762477 active, 0 holddown, 12 hidden)
+              Direct:      1 routes,      1 active
+               Local:      1 routes,      1 active
+                 BGP: 1079404 routes, 762470 active
+              Static:      5 routes,      5 active
+
+inet.2: 3073 destinations, 3073 routes (3073 active, 0 holddown, 0 hidden)
+                 BGP:   3073 routes,   3073 active
+
+small.inet.0: 116371 destinations, 116377 routes (116371 active, 0 holddown, 0 hidden)
+                 BGP: 116377 routes, 116371 active
+
+inet6.0: 66912 destinations, 103194 routes (66897 active, 0 holddown, 30 hidden)
+              Direct:      3 routes,      3 active
+               Local:      2 routes,      2 active
+                 BGP: 103185 routes,  66888 active
+              Static:      4 routes,      4 active
+
+small.inet6.0: 31162 destinations, 31162 routes (31162 active, 0 holddown, 0 hidden)
+                 BGP:  31162 routes,  31162 active
+
+rviews@rviews-vm> show route summary

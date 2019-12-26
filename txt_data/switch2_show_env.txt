@@ -1,0 +1,89 @@
+
+! Executing command: show env all
+  Switch 1 FAN 1 is OK
+Switch 1 FAN 2 is OK
+Switch 1 FAN 3 is OK
+FAN PS-1 is OK
+FAN PS-2 is OK
+Switch 1: SYSTEM TEMPERATURE is OK
+Inlet Temperature Value: 30 Degree Celsius
+Temperature State: GREEN
+Yellow Threshold : 46 Degree Celsius
+Red Threshold    : 56 Degree Celsius
+
+Hotspot Temperature Value: 42 Degree Celsius
+Temperature State: GREEN
+Yellow Threshold : 105 Degree Celsius
+Red Threshold    : 125 Degree Celsius
+SW  PID                 Serial#     Status           Sys Pwr  PoE Pwr  Watts
+--  ------------------  ----------  ---------------  -------  -------  -----
+1A  PWR-C1-715WAC       LIT222732AC  OK              Good     Good     715
+1B  PWR-C1-715WAC       DCA2210G14S  OK              Good     Good     715
+
+! Executing command: show power inline
+  Module   Available     Used     Remaining
+          (Watts)     (Watts)    (Watts)
+------   ---------   --------   ---------
+1          1120.0       67.1      1052.9
+Interface Admin  Oper       Power   Device              Class Max
+                            (Watts)
+--------- ------ ---------- ------- ------------------- ----- ----
+Gi1/0/1   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/2   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/3   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/4   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/5   auto   on         15.4    Ieee PD             3     30.0
+Gi1/0/6   auto   on         15.4    Ieee PD             3     30.0
+Gi1/0/7   auto   on         6.3     IP Phone 7940       n/a   30.0
+Gi1/0/8   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/9   auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/10  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/11  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/12  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/13  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/14  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/15  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/16  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/17  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/18  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/19  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/20  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/21  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/22  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/23  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/24  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/25  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/26  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/27  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/28  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/29  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/30  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/31  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/32  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/33  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/34  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/35  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/36  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/37  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/38  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/39  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/40  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/41  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/42  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/43  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/44  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/45  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/46  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/47  auto   off        0.0     n/a                 n/a   30.0
+Gi1/0/48  auto   on         30.0    AIR-AP3802E-B-K9    4     30.0
+
+! Executing command: show stack-power neighbors
+  Power Stack           Stack   Stack    Total   Rsvd    Alloc   Unused  Num  Num
+Name                  Mode    Topolgy  Pwr(W)  Pwr(W)  Pwr(W)  Pwr(W)  SW   PS
+--------------------  ------  -------  ------  ------  ------  ------  ---  ---
+Powerstack-1          SP-PS   Stndaln  1430    30      347     1053    1    2
+
+    Power Stack           Port 1  Port 1             Port 2  Port 2
+SW  Name                  Status  Neighbor SW:MAC    Status  Neighbor SW:MAC
+--  --------------------  ------  ----------------   ------  ----------------
+1   Powerstack-1          NoConn  -                  NoConn  -
