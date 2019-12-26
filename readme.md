@@ -186,7 +186,7 @@ The left side of the equation references a column in the data Fram which does no
 
 The right side takes the existing MAC column in the data frame and takes each MAC address and runs it through the get_oui_macvendors function to get the Vendor OUI and "maps" that result into the new OUI "cell" for that MACs row in the data frame.
 
-![pandas-newcolumn](/Users/claudia/Dropbox (Indigo Wire Networks)/scripts/python/2019/pandas_neteng/images/pandas-newcolumn.png)
+![pandas-newcolumn](./images/pandas-newcolumn.png)
 
 ### More questions
 
