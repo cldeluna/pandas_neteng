@@ -92,12 +92,17 @@ def arp_intr_main(template_file, output_file, verbose, filename, save, compariso
     # Print the filtered data frame
     print(f"The Data Frame: \n {df[df['INTERFACE'] == 'Vlan1']}")
 
-    # Save the filtered data frame for only the ADDRESS column and extract the values of each IP
+    # Save the filtered data frame for only the ADDRESS column extracting the values of each IP only for Vlan1
+    # In [2]: type(pandas_vlan1ips)
+    # Out [2]: numpy.ndarray
     pandas_vlan1ips = df['ADDRESS'].loc[df['INTERFACE'] == 'Vlan1'].values
 
     # Getting the IP list with the .to_list() method
+    # In [4]: type(pandas_vlan1ips)
+    # Out[4]: list
     pandas_vlan1ips = df['ADDRESS'].loc[df['INTERFACE'] == 'Vlan1'].to_list()
     print(f"The IP Values in a list: \n{pandas_vlan1ips}")
+
 
     ###### QUESTION
     print_header("Q: Can I build a dictionary of IP and MACs where the key is the IP and the value is the MAC?")
@@ -108,9 +113,9 @@ def arp_intr_main(template_file, output_file, verbose, filename, save, compariso
 
     # list of dictionaries  ***  This is what you want
     # dict with keys of ADDRESS and MAC
-    vlan1ipmac_dict = df[['ADDRESS', 'MAC']].to_dict(orient='records')
+    vlan1ipmac_ldict = df[['ADDRESS', 'MAC']].to_dict(orient='records')
     print(f"List of dictionaries, each with Key/Value of IP/Mac..."
-          f"\n{vlan1ipmac_dict}")
+          f"\n{vlan1ipmac_ldict}")
 
     ##
     """
@@ -195,9 +200,9 @@ def arp_intr_main(template_file, output_file, verbose, filename, save, compariso
 
         # Using list comprehension
         print(f"\n\tUsing Python List Comprehension...")
-        vlan1ips_lc = [line[1] for line in strained if line[5] == 'Vlan1' ]
+        lc_vlan1ips = [line[1] for line in strained if line[5] == 'Vlan1' ]
 
-        print(f"\tUsing List Comprehension: \n\t{vlan1ips_lc}\n")
+        print(f"\tUsing List Comprehension: \n\t{lc_vlan1ips}\n")
 
 
     ###### QUESTION
