@@ -310,6 +310,7 @@ def main():
         # column_entry = df[column]
         # print(column_entry.values)
     time.sleep(pause_in_seconds)
+    # This is a bad habit to get into...Iterating over a Pandas Data Frame generally means you are using it wrong
 
     ###############################################################################################################
     print_section_header(f"\n5. Add a column to the Data Frame for MAC Address OUI/Vendor.\n "
