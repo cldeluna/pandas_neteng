@@ -1,16 +1,18 @@
 # Pandas for Network Engineers (I mean...who doesn't love Pandas? )
 
+![pdlogo-net-2019-12-30_10-30-27](./images/pdlogo-net-2019-12-30_10-30-27.png)
+
 ### The module not the mammal!
 
 My original title for this article was going to be ***Decomposing Pandas\*** as a follow on to ***[Decomposing Data Structures](https://gratuitous-arp.net/decomposing-complex-json-data-structures/)\*** but I was advised against that name.  Go figure.
 
-One of the things I love most about Python is that its always waiting for me to get just a little bit better so it can show me a slightly smarter way to do something.  Pandas is the latest such example.
+One of the things I love most about Python is that it's always waiting for me to get just a little bit better so it can show me a slightly smarter way to do something.  Pandas is the latest such example.
 
 Pandas is a powerful data science Python library that excels at manipulating multidimensional data.  
 
 Why is this even remotely interesting to me as a network engineer? 
 
-Well, thats what Excel does, right? 
+Well, that's what Excel does, right? 
 
 I spend more time than I care to admit processing data in Excel.  I find that Excel is always the lowest common denominator.  I understand why and often I'm a culprit myself but eventually one grows weary of all the data being in a spreadsheet and having to manipulate it.  I'm working on the former and Pandas is helping on the latter.
 
@@ -72,7 +74,9 @@ Here is that data in a Pandas Data Frame:
     # loads that parsed data into a Pandas Data Frame called "df"
     
     In [1]: df = pd.DataFrame(strained, columns=strainer.header)                                                                                                                                                                                                           
-    Out[1]: df
+    In [2]: df                                                                                                                                                                                                                                                      
+    Out[2]: 
+    
     
         PROTOCOL         ADDRESS  AGE             MAC  TYPE INTERFACE
     0   Internet       10.1.10.1    5  28c6.8ee1.659b  ARPA     Vlan1
@@ -132,7 +136,7 @@ Same output with a single command!
 
 ### Python List Comprehension
 
-For those more conversant with Python, you could say that List comprehension is just as efficient.
+For those more conversant with Python, you could say that list comprehension is just as efficient.
 
 ```python
 # Using list comprehension
@@ -315,7 +319,7 @@ Don't discount it because it does not seem to be applicable to what you are tryi
 
 In fact, this small example and some of the other content in this repository comes from an actual use case.
 
-I'm involved in several large refresh projects and our workflow is what you would expect.  
+In 2019, I was involved in several large refresh projects and our workflow is what you would expect.  
 
 1. Snapshot the environment before you change out the equipment  
 2. Perform some basic reachability tests
