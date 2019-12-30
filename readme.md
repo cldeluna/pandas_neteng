@@ -245,7 +245,9 @@ I'm involved in several large refresh projects and our workflow is what you woul
 
 As you can see if you delve into this repository, its heavy on APR and MAC data manipulation so that we can automate most of the workflow I've described above.
 
-I hope I've either put Pandas on your radar as a possible tool to use in the future or actually gotten you curious enough to take the next steps. I hope that the latter is the case and I encourage you to just dive in.  I hope this repository can help!
+I hope I've either put Pandas on your radar as a possible tool to use in the future or actually gotten you curious enough to take the next steps. 
+
+I really  hope that the latter is the case and I encourage you to just dive in.  I hope this repository can help!
 
 
 
