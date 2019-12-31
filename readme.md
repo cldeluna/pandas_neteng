@@ -443,7 +443,17 @@ Intro to DataFrames by Joe James <--great 'cheatsheet'
 
  https://www.youtube.com/watch?v=e60ItwlZTKM  
 
+------
 
+
+
+### What others have shared...
+
+[Analyzing Wireshark Data with Pandas](https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/) by by George Eleftheriou
+
+
+
+------
 
 
 
