@@ -27,6 +27,10 @@ def normalize_mac(mac):
 
 
 def load_nxos_data():
+    """
+    Static data simulating the output from the show mac address-table command on an NX-OS device
+    :return: data
+    """
 
     data = """
 server_sw01# show mac address-table
@@ -60,6 +64,11 @@ server_sw01#
 
 
 def load_aci_data():
+    """"
+    Static data simulating the response from the REST Call:
+    https://{{URL}}/api/node/class/fvCEp.json?rsp-subtree=children&order-by=fvCEp.mac
+    :return: aci_data
+    """
 
     aci_data = {
         "totalCount": "4",
