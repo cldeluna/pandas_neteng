@@ -256,13 +256,16 @@ def main():
 
     found_df = df_merged.loc[df_merged['Exist'] == 'both']
     notfound_df = df_merged.loc[df_merged['Exist'] != 'both']
+    nxosnotfound_df = df_merged.loc[df_merged['Exist'] == 'left_only']
 
     print(f"\n\nFound {len(found_df)} MAC(s): \n{found_df}")
-    print(f"\n\n{len(notfound_df)} MAC(s) MISSING: \n{notfound_df}")
+    print(f"\n\n{len(notfound_df)} ALL MAC(s) MISSING: \n{notfound_df}")
+    print(f"\n\n{len(nxosnotfound_df)} NXOS MAC(s) MISSING from ACI: \n{nxosnotfound_df}")
 
     print(f"\n\n============== SUMMARY ============== ")
-    print(f"Of {len(df_merged)} Total MACs both legacy and ACI: \n\t- FOUND\t\t{len(found_df)} "
-          f"\n\t- MISSING\t{len(notfound_df)} \n\n")
+    print(f"Of {len(df_merged)} Total MACs both legacy and ACI: \n\t- NX-OS FOUND IN ACI\t\t{len(found_df)} "
+          f"\n\t- TOTAL MACs MISSING    \t{len(notfound_df)}"
+          f"\n\t- NX-OS MISSING FROM ACI\t{len(nxosnotfound_df)} \n\n")
 
 
 # Standard call to the main() function.
