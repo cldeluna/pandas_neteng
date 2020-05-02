@@ -20,8 +20,9 @@ import pandas as pd
 def normalize_mac(mac):
     """
     Given a Mac, strip periods, colons, or dashes form string and return result in lower case
+    This works but for a more production ready script look at the netaddr module
     :param mac:
-    :return:
+    :return: lowercase mac without any special characters
     """
     return re.sub(r'(\.|:|\-)', '', mac).lower()
 
@@ -215,19 +216,32 @@ def load_aci_data():
 
 
 def main():
+    """
+    The main section of this scripts first loads the static nx-os data.  This data must be parsed in order to obtain
+    structured data we can use.
+    :return:
+    """
 
     # Load the nxos data
+    # Think of this are your PRE Migration data
     nxos = load_nxos_data()
+
     # Process the text output of the show command and turn into a list of lines
-    n = nxos.splitlines()
+    nxos_list = nxos.splitlines()
 
     # Initialize an empty list of mac lines which will contain lists of each line with a mac address
     # This is a list of lists
     mac_list = []
 
     # Iterate over the lines and look for the mac address result line pattern
+    # In a more production ready script this section would be replaced with a call to TextFMS if you were dealing
+    # with saved show commands.
+    # If a more sophisticated method was used to query the device (napalm, netmiko with TextFMS, pyATS and Genie) then
+    # you would likely have saved that output in JSON or Pickle so that it could be loaded directly here as a
+    # usable object
+    # Example line:
     # * 700 80e0.1d37.2b82 dynamic 25832170 F F Eth1/37
-    for line in n:
+    for line in nxos_list:
         # print(line)
         # mac_match = re.search(r'([0-9a-f]{4}\.[0-9a-f]{4}\.[0-9a-f]{4})', line, re.IGNORECASE)
         line_match = re.search(r'^.{1,3}\s+\d{1,4}\s+([0-9a-f]{4}\.[0-9a-f]{4}\.[0-9a-f]{4})\s+\w+', line, re.IGNORECASE)
@@ -245,7 +259,9 @@ def main():
     print(f"\nNXOS Data Frame: \n{df_nxos}")
 
     # Load the aci data
+    # Think of this as your POST Migration data
     aci = load_aci_data()
+    # Manipulate the REST response to get a list of lists with list elements representing the mac and the vlan (encap)
     aci_mac_list = []
     for line in aci['imdata']:
         temp_list = []
@@ -256,16 +272,23 @@ def main():
 
     # Turn the aci_mac_list list of lists into a Pandas Data Frame
     df_aci = pd.DataFrame(aci_mac_list)
+
+    # Now we need an apples to apples comparison and the MAC format is different in each data set
     # Add a new column called 'normalized_mac' and strip off any punctuation characters and make lower case
     # The normalize_mac function does this
     df_aci['normalized_mac']= df_aci[0].map(normalize_mac)
     print(f"\nACI Data Frame: \n{df_aci}")
 
-    df_merged = pd.merge(df_nxos, df_aci, on='normalized_mac', how='outer', indicator='Exist')
+    df_merged = pd.merge(df_nxos, df_aci, on='normalized_mac', how='outer', indicator="Exist")
     print(f"\nNX-OS and ACI MERGED Data Frame: \n{df_merged}")
 
+    # Interrogate the merged data frame for the information we care about
+    # How many Macs from my NX-OS data are in ACI (the value in the Exist column would be  "both" because the MAC
+    # exists in both data frames
     found_df = df_merged.loc[df_merged['Exist'] == 'both']
+    # Which Macs are missing
     notfound_df = df_merged.loc[df_merged['Exist'] != 'both']
+    # Which Macs are missing from ACI - that is from the "right" side which is the ACI data frame in the merge command
     nxosnotfound_df = df_merged.loc[df_merged['Exist'] == 'left_only']
 
     print(f"\n\nFound {len(found_df)} MAC(s): \n{found_df}")
