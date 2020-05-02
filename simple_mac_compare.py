@@ -236,12 +236,13 @@ def main():
             line_split = line_match.group().split()
             # append the line_split list to the mac_list (list of lists)
             mac_list.append(line_split)
+            
     # Turn the mac_list list of lists into a Pandas Data Frame
-    df = pd.DataFrame(mac_list)
+    df_nxos = pd.DataFrame(mac_list)
     # Add a new column called 'normalized_mac' and strip off any punctuation characters and make lower case
     # The normalize_mac function does this
-    df['normalized_mac']= df[2].map(normalize_mac)
-    print(f"\nNXOS Data Frame: \n{df}")
+    df_nxos['normalized_mac']= df_nxos[2].map(normalize_mac)
+    print(f"\nNXOS Data Frame: \n{df_nxos}")
 
     # Load the aci data
     aci = load_aci_data()
@@ -260,7 +261,7 @@ def main():
     df_aci['normalized_mac']= df_aci[0].map(normalize_mac)
     print(f"\nACI Data Frame: \n{df_aci}")
 
-    df_merged = pd.merge(df, df_aci, on='normalized_mac', how='outer', indicator='Exist')
+    df_merged = pd.merge(df_nxos, df_aci, on='normalized_mac', how='outer', indicator='Exist')
     print(f"\nNX-OS and ACI MERGED Data Frame: \n{df_merged}")
 
     found_df = df_merged.loc[df_merged['Exist'] == 'both']
