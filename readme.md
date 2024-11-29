@@ -237,7 +237,7 @@ Not impressed yet.  Let see what else we can do with this Data Frame.
 
 I have a small function that performs MAC address lookups to get the Vendor OUI.
 
-This function is called **get_oui_macvendors()** and you pass it a MAC address and it returns the vendor name.
+This function is called **`get_oui_macvendors()`** and you pass it a MAC address and it returns the vendor name.
 
 It uses the [MacVendors.co](https://macvendors.co/) API.
 
