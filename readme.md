@@ -40,7 +40,7 @@ My goal here is not to teach you Pandas as there is quite alot of excellent mate
 
 My goal is to share what I've been able to do with it as a Network Engineer, what I found most useful as I tried to wrap my head around it, and my own Python REPL work. 
 
-Lets look at something simple.  I need to get the ARP table from a device and "interrogate" the data.
+Let's look at something simple.  I need to get the ARP table from a device and "interrogate" the data.
 
 In this example, I have a text file with the output of the "show ip arp" command which I've parsed with [TextFSM](https://gratuitous-arp.net/a-quick-example-of-using-textfsm-to-parse-data-from-cisco-show-commands-python3-version/).
 
@@ -162,7 +162,7 @@ Finally, Yes its one line but I'm still iterating over the data.
 
 Pandas is set up to do all the iteration for me and lets me refer to data by name or by position "out of the box" and without any extra steps.
 
-Lets decompose the one line of code:
+Let's decompose the one line of code:
 
 ![pandas_vlan1ips-values-2019-12-30_07-32-39](./images/pandas_vlan1ips-values-2019-12-30_07-32-39.png)
 
@@ -277,7 +277,7 @@ Out[10]:
 
 ### More questions
 
-Lets interrogate our data set further.
+Let's interrogate our data set further.
 
 I want a **unique lis**t of all the INTERFACE values.
 
@@ -297,7 +297,7 @@ Vlan101    1
 dtype: int64
 ```
 
-Lets take it down a level and get **unique totals based on INTERFACE *and* vendor OUI**.
+Let's take it down a level and get **unique totals based on INTERFACE *and* vendor OUI**.
 
 ```python
 In [3]: df.groupby(['INTERFACE','OUI']).size()                                                          
