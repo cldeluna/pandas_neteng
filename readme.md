@@ -16,7 +16,7 @@ Well, that's what Excel does, right?
 
 I spend more time than I care to admit processing data in Excel.  I find that Excel is always the lowest common denominator.  I understand why and often I'm a culprit myself but eventually one grows weary of all the data being in a spreadsheet and having to manipulate it.  I'm working on the former and Pandas is helping on the latter.
 
-Google around enough for help on processing spreadsheets and you will come across references to the Pandas Python module.
+Search around Google enough for help on processing spreadsheets and you will come across references to the Pandas Python module.
 
 If you are anything like me, you go through some or all of these stages:
 
