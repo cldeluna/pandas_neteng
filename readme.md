@@ -37,7 +37,7 @@ Knowing how to work with Pandas, even in a limited fashion as is the case with m
 
 My goal here is not to teach you Pandas as there is quite alot of excellent material out there to do that. I've highlighted the content which helped me the most in the "Study Guide" section at the end.
 
-My goal is to share what I've been able to do with it as a Network Engineer, what I found most useful as I tried to wrap my head around it, and my own REPL work. 
+My goal is to share what I've been able to do with it as a Network Engineer, what I found most useful as I tried to wrap my head around it, and my own Python REPL work. 
 
 Lets look at something simple.  I need to get the ARP table from a device and "interrogate" the data.
 
