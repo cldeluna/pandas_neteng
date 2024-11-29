@@ -365,7 +365,7 @@ The script is designed to run with data in the repository by default but you can
 
 Using the `-i` option will drop you into iPython with all of the data still in memory for you to use. This will allow you to interrogate the data in the Data Frame yourself.
 
-If you would like to use it make sure you clone or download the repository and set up the expected environment which is documented in the requirements.txt file.
+If you would like to use it make sure you clone or download the repository and set up the expected environment which is documented in the [requirements.txt](requirements.txt) file.
 
 Options for the **arp_interrogate.py** script:
 
