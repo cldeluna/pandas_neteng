@@ -361,9 +361,9 @@ It then goes through a variety of questions (some of which you have seen above) 
 
 There are comments throughout which are reminders for me and which may be useful to you.
 
-The script is designed to run with data in the repository by default but you can pass it your own "show ip arp" output with the **-o** option.
+The script is designed to run with data in the repository by default but you can pass it your own "show ip arp" output with the `-o` option.
 
-Using the **-i** option will drop you into iPython with all of the data still in memory for you to use. This will allow you to interrogate the data in the Data Frame yourself.
+Using the `-i` option will drop you into iPython with all of the data still in memory for you to use. This will allow you to interrogate the data in the Data Frame yourself.
 
 If you would like to use it make sure you clone or download the repository and set up the expected environment which is documented in the requirements.txt file.
 
