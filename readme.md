@@ -2,7 +2,7 @@
 
 ![pdlogo-net-2019-12-30_10-30-27](./images/pdlogo-net-2019-12-30_10-30-27.png)
 
-### The module not the mammal!
+### The module not the mammal! :panda_face:
 
 My original title for this article was going to be ***Decomposing Pandas\*** as a follow on to ***[Decomposing Data Structures](https://gratuitous-arp.net/decomposing-complex-json-data-structures/)\*** but I was advised against that name.  Go figure.
 
@@ -25,7 +25,7 @@ If you are anything like me, you go through some or all of these stages:
 - As you continue to struggle with what got you here in the first place (there has **got** to be a better way to deal with this spreadsheet data) you reconsider.  So you try to do some processing in Pandas and pull a mental muscle...and what the heck is this NaN thing that keeps making my program crash?  Basically, you find yourself way way out of your comfort zone (well..I did)!
 - You determine that your limited Python skills are not up to something quite this complex...after all, you know just enough Python to do the automation stuff you need to do and you are not a data scientist.
 
-Finally, in a fit of desperation as you see all the Excel files you have to process, you decide that a python module is not going to get the better of you and you give it another go!
+Finally, in a fit of desperation as you see all the Excel files you have to process, you decide that a Python module is not going to get the better of you and you give it another go!
 
 So here I am,  on the other side of that brain sprain, and better for it, as is usually the case.
 
@@ -150,7 +150,7 @@ Results in:
     ['10.1.10.1', '10.1.10.11', '10.1.10.10', '10.1.10.21', '10.1.10.37', '10.1.10.102', '71.103.129.220', '10.1.10.170', '10.1.10.181']
 So yes..list comprehension gets us down to one line but I find it a bit obscure to read and a week later I will have no idea what is in line[5] or line[1].  
 
-I could turn the data into a list of dictionaries so that rather than using the positional indexes in a list I could turn line[1] into line['IP_ADDRESS'] and line[5] into line['INTERFACE'] which would make reading the list comprehension and the basic python easier but now we've added lines to the script.
+I could turn the data into a list of dictionaries so that rather than using the positional indexes in a list I could turn line[1] into line['IP_ADDRESS'] and line[5] into line['INTERFACE'] which would make reading the list comprehension and the basic Python easier but now we've added lines to the script.
 
 Finally, Yes its one line but I'm still iterating over the data.
 
@@ -179,7 +179,7 @@ I'm using iPython in the examples below as you can see from the "In" and "Out" l
 `In [2]: type(pandas_vlan1ips)`                                                                                                                                                                                                                                   
 `Out[2]: numpy.ndarray`
 
-I would like my list back as an actual python list and thats no problem for Pandas.
+I would like my list back as an actual Python list and thats no problem for Pandas.
 
 ![pandas-vlan1ips-list-2019-12-30_07-46-43](./images/pandas-vlan1ips-list-2019-12-30_07-46-43.png)
 
