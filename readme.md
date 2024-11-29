@@ -1,4 +1,5 @@
-# Pandas for Network Engineers (I mean...who doesn't love Pandas? )
+# Pandas for Network Engineers
+(I mean...who doesn't love Pandas?)
 
 ![pdlogo-net-2019-12-30_10-30-27](./images/pdlogo-net-2019-12-30_10-30-27.png)
 
