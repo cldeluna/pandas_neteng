@@ -335,7 +335,7 @@ In 2019, I was involved in several large refresh projects and our workflow is wh
 5. Compare PRE and POST state and confirm that all the devices you had just before you started are back on the network.
 6. Troubleshoot as needed
 
-As you can see if you delve into this repository, its heavy on APR and MAC data manipulation so that we can automate most of the workflow I've described above.    Could I have done it without Pandas? Yes.  Could I have done it as quickly and efficiently with code that I will have some shot of understanding in a month without Pandas? No.
+As you can see if you delve into this repository, its heavy on ARP and MAC data manipulation so that we can automate most of the workflow I've described above.    Could I have done it without Pandas? Yes.  Could I have done it as quickly and efficiently with code that I will have some shot of understanding in a month without Pandas? No.
 
 I hope I've either put Pandas on your radar as a possible tool to use in the future or actually gotten you curious enough to take the next steps. 
 
