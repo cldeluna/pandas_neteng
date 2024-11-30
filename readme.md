@@ -65,7 +65,11 @@ Out[1]:
  ['Internet', '10.1.10.181', '0', '000c.298c.d663', 'ARPA', 'Vlan1']]
 ```
 
-*Note: Don't read anything into the variable name **strained**.  The function I use to parse the data is called **textfsm_strainer** because I "strain" the data through TextFSM to get structured data out of it so I put the resulting parsed data from that function into a variable called "strained"*.
+> [!NOTE]
+> Don't read anything into the variable name **strained**.  The function I use
+> to parse the data is called **textfsm_strainer** because I "strain" the data
+> through TextFSM to get structured data out of it so I put the resulting parsed
+> data from that function into a variable called "strained".
 
 Here is that data in a Pandas Data Frame:
 
