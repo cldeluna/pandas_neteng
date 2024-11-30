@@ -32,7 +32,7 @@ So here I am,  on the other side of that brain sprain, and better for it, as is 
 
 ### What is possible with Pandas...
 
-Once you get the hang of it, manipulating spreadsheet-like data sets becomes so much simpler with Pandas. In fact, thats true for any data set, not just ones from spreadsheets.  In fact, in the examples below, the data set comes from parsing show commands with TextFSM.
+Once you get the hang of it, manipulating spreadsheet-like data sets becomes so much simpler with Pandas. In fact, that is true for any data set, not just ones from spreadsheets.  In fact, in the examples below, the data set comes from parsing show commands with TextFSM.
 
 Knowing how to work with Pandas, even in a limited fashion as is the case with me, is going to be a handy skill to have for any Network Engineer who is (or is trying to become) conversant in programmability & automation.  
 
@@ -190,7 +190,7 @@ In [2]: type(pandas_vlan1ips)
 Out[2]: numpy.ndarray
 ```
 
-I would like my list back as an actual Python list and thats no problem for Pandas.
+I would like my list back as an actual Python list and that is no problem for Pandas.
 
 ![pandas-vlan1ips-list-2019-12-30_07-46-43](./images/pandas-vlan1ips-list-2019-12-30_07-46-43.png)
 
