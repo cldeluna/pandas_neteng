@@ -176,7 +176,7 @@ Let's decompose the one line of code:
 
 If you think of this expression as a filter sandwich, the **`df['ADDRESS']`** and **`.values`** are the bread and the middle  **`.loc[df['INTERFACE']] == 'Vlan1']`** part that filters is the main ingredient.  
 
-Without the middle part you would have a Pandas Series or list of all the IPs in the ARP table.   Basically you get the entire contents of the 'ADDRESS" column in the data frame without any filtering.  
+Without the middle part you would have a Pandas Series or list of all the IPs in the ARP table.   Basically you get the entire contents of the 'ADDRESS' column in the data frame without any filtering.  
 
 When you "qualify" **`df['ADDRESS']`** with **`.loc[df['INTERFACE']] == 'Vlan1']`** you filter the ADDRESS column in the data frame for just those records where INTERFACE is 'Vlan1' and you only return the IP values by using the .values method.
 
