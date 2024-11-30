@@ -358,7 +358,7 @@ The "[Study Guide](#study-guide)" links below have some very good and clear cont
 
 Let me also say that it took a focused effort to get the point where I was doing useful work with Pandas and like I said, I've only just scratched the surface.  There is no doubt in my mind that it was worth the effort.
 
-Once you've gone through the [Study Guide](#study-guide) links and any others that you have found, you can return to this repository to see examples. In particular, this repository contains a Python script called **arp_interrogate.py**.
+Once you've gone through the [Study Guide](#study-guide) links and any others that you have found, you can return to this repository to see examples. In particular, this repository contains a Python script called **[arp_interrogate.py](arp_interrogate.py)**.
 
 It goes through loading the ARP data from the "show ip arp" command, parsing it, and creating a Pandas Data Frame.
 
