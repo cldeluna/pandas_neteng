@@ -452,7 +452,7 @@ Intro to DataFrames by Joe James <--great 'cheatsheet'
 
 ### What others have shared...
 
-* [Analyzing Wireshark Data with Pandas (archive.org)](https://web.archive.org/web/20221003035937/https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/) by George Eleftheriou
+* (archive.org) [Analyzing Wireshark Data with Pandas](https://web.archive.org/web/20221003035937/https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/) by George Eleftheriou
   * [(original dead link)](https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/)
 
 
