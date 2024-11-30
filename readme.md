@@ -36,7 +36,7 @@ Once you get the hang of it, manipulating spreadsheet-like data sets becomes so 
 
 Knowing how to work with Pandas, even in a limited fashion as is the case with me, is going to be a handy skill to have for any Network Engineer who is (or is trying to become) conversant in programmability & automation.  
 
-My goal here is not to teach you Pandas as there is quite a lot of excellent material out there to do that. I've highlighted the content which helped me the most in the "Study Guide" section at the end.
+My goal here is not to teach you Pandas as there is quite a lot of excellent material out there to do that. I've highlighted the content which helped me the most in the "[Study Guide](#study-guide)" section at the end.
 
 My goal is to share what I've been able to do with it as a Network Engineer, what I found most useful as I tried to wrap my head around it, and my own Python REPL work. 
 
@@ -354,11 +354,11 @@ This companion GitHub Repository is intended to help and give you examples.
 
 ## Next Steps
 
-The "Study Guide" links below have some very good and clear content to get you started.  Of all the content out there, these resources were the most helpful for me.  
+The "[Study Guide](#study-guide)" links below have some very good and clear content to get you started.  Of all the content out there, these resources were the most helpful for me.  
 
 Let me also say that it took a focused effort to get the point where I was doing useful work with Pandas and like I said, I've only just scratched the surface.  There is no doubt in my mind that it was worth the effort.
 
-Once you've gone through the Study Guide links and any others that you have found, you can return to this repository to see examples. In particular, this repository contains a Python script called **arp_interrogate.py**.
+Once you've gone through the [Study Guide](#study-guide) links and any others that you have found, you can return to this repository to see examples. In particular, this repository contains a Python script called **arp_interrogate.py**.
 
 It goes through loading the ARP data from the "show ip arp" command, parsing it, and creating a Pandas Data Frame.
 
