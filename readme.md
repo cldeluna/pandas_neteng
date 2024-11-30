@@ -260,7 +260,7 @@ The right side takes the existing MAC column in the data frame and takes each MA
 
 ![pandas-newcolumn](./images/pandas-newcolumn.png)
 
-Now we have an updated Data Frame with a new OUI column giving the vendor code for each Mac.
+Now we have an updated Data Frame with a new OUI column giving the vendor code for each MAC.
 
 ```python
 In [10]: df                                                                                            
