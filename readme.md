@@ -36,7 +36,7 @@ Once you get the hang of it, manipulating spreadsheet-like data sets becomes so 
 
 Knowing how to work with Pandas, even in a limited fashion as is the case with me, is going to be a handy skill to have for any Network Engineer who is (or is trying to become) conversant in programmability & automation.  
 
-My goal here is not to teach you Pandas as there is quite alot of excellent material out there to do that. I've highlighted the content which helped me the most in the "Study Guide" section at the end.
+My goal here is not to teach you Pandas as there is quite a lot of excellent material out there to do that. I've highlighted the content which helped me the most in the "Study Guide" section at the end.
 
 My goal is to share what I've been able to do with it as a Network Engineer, what I found most useful as I tried to wrap my head around it, and my own Python REPL work. 
 
@@ -412,7 +412,7 @@ Note that this class is not Free.
 
 [Pandas Fundamentals](https://app.pluralsight.com/courses/909c55b8-6855-477a-93b3-673a0c660ccf/table-of-contents) by [Paweł Kordek](https://app.pluralsight.com/profile/author/pawel-kordek) on [PluralSight ](https://app.pluralsight.com/library/)is exceptionally good. 
 
-There is quite alot to Pandas and it can be overwhelming (at least it was for me) but this course in particular got me working very quickly and explained things in a very clear way.
+There is quite a lot to Pandas and it can be overwhelming (at least it was for me) but this course in particular got me working very quickly and explained things in a very clear way.
 
 
 
