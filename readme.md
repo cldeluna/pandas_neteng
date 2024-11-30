@@ -370,7 +370,7 @@ If you would like to use it make sure you clone or download the repository and s
 
 Options for the **arp_interrogate.py** script:
 
-```zsh
+```
 (pandas) Claudias-iMac:pandas_neteng claudia$ python arp_interrogate.py -h
 usage: arp_interrogate.py [-h] [-t TEMPLATE_FILE] [-o OUTPUT_FILE] [-v]
                           [-f FILENAME] [-s] [-i] [-c]
