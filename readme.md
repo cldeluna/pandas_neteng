@@ -283,7 +283,7 @@ Out[10]:
 
 Let's interrogate our data set further.
 
-I want a **unique lis**t of all the INTERFACE values.
+I want a **unique list** of all the INTERFACE values.
 
 ```python
 In [1]: df['INTERFACE'].unique()                                                         
