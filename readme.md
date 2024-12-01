@@ -402,67 +402,56 @@ repository'
 
 ## Study Guide
 
-A Quick Introduction to the “Pandas” Python Library
+- A Quick Introduction to the “Pandas” Python Library
 
-https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673
+  - https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673
 
-For me **this is the class that made all the other classes start to make sense**.
+  - For me **this is the class that made all the other classes start to make sense**.
 
-Note that this class is not Free.
+  - Note that this class is not Free.
 
-[Pandas Fundamentals](https://app.pluralsight.com/courses/909c55b8-6855-477a-93b3-673a0c660ccf/table-of-contents) by [Paweł Kordek](https://app.pluralsight.com/profile/author/pawel-kordek) on [PluralSight ](https://app.pluralsight.com/library/)is exceptionally good. 
+- [Pandas Fundamentals](https://app.pluralsight.com/courses/909c55b8-6855-477a-93b3-673a0c660ccf/table-of-contents)
+  by [Paweł Kordek](https://app.pluralsight.com/profile/author/pawel-kordek) on
+  [PluralSight ](https://app.pluralsight.com/library/)is exceptionally good. 
 
-There is quite a lot to Pandas and it can be overwhelming (at least it was for me) but this course in particular got me working very quickly and explained things in a very clear way.
+  - There is quite a lot to Pandas and it can be overwhelming (at least it was for
+    me) but this course in particular got me working very quickly and explained
+    things in a very clear way.
 
+- Python Pandas Tutorial 2: **Dataframe Basics** by codebasics <- good for Pandas operations and set_index
 
+  - https://www.youtube.com/watch?v=F6kmIpWWEdU
 
-Python Pandas Tutorial 2: **Dataframe Basics** by codebasics <- good for Pandas operations and set_index
+- Python Pandas Tutorial 5: Handle **Missing Data**: fillna, dropna, interpolate by codebasics
 
-https://www.youtube.com/watch?v=F6kmIpWWEdU
+  - https://www.youtube.com/watch?v=EaGbS7eWSs0
 
+- Python Pandas Tutorial 6. Handle Missing Data: replace function by codebasics
 
+  - https://www.youtube.com/watch?v=XOxABiMhG2U
 
-Python Pandas Tutorial 5: Handle **Missing Data**: fillna, dropna, interpolate by codebasics
+- [Real Python](https://realpython.com/) <- this is a terrific resource for learning Python
 
-https://www.youtube.com/watch?v=EaGbS7eWSs0
+  - There is a lot of content here. Explore at will. The two below I found particularly helpful.
 
+  - https://realpython.com/search?q=pandas
 
+    - [Pandas GroupBy: Your Guide to Grouping Data in Python](https://realpython.com/pandas-groupby/)
 
-Python Pandas Tutorial 6. Handle Missing Data: replace function by codebasics
+    - [Using Pandas and Python to Explore Your Dataset](https://realpython.com/pandas-python-explore-dataset/)
 
-https://www.youtube.com/watch?v=XOxABiMhG2U
+- Intro to DataFrames by Joe James <- great 'cheatsheet'
 
-
-
-[Real Python](https://realpython.com/) <- this is terrific resource for learning Python
-
-There is a lot of content here. Explore at will. The two below I found particularly helpful.
-
-https://realpython.com/search?q=pandas
-
-- [Pandas GroupBy: Your Guide to Grouping Data in Python](https://realpython.com/pandas-groupby/)
-
-- [Using Pandas and Python to Explore Your Dataset](https://realpython.com/pandas-python-explore-dataset/)
-
-  
-
-Intro to DataFrames by Joe James <--great 'cheatsheet'
-
- https://www.youtube.com/watch?v=e60ItwlZTKM  
+  - https://www.youtube.com/watch?v=e60ItwlZTKM  
 
 ------
-
-
 
 ### What others have shared...
 
 * (archive.org) [Analyzing Wireshark Data with Pandas](https://web.archive.org/web/20221003035937/https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/) by George Eleftheriou
   * [(original dead link)](https://www.python4networkengineers.com/posts/wireshark/analyzing_wireshark_data_with_pandas/)
 
-
 ------
-
-
 
 ##### Disclaimer ######
 
